@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto VI</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* MAIN BACKGROUND */
+
+        .hero {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.15)
+                ),
+                linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.65),
+                    transparent 50%
+                ),
+                url("https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=3840");
+
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            width: 100%;
+            padding: 30px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav ul a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            transition: 0.3s;
+        }
+
+        nav ul a:hover {
+            opacity: 0.6;
+        }
+
+        /* HERO CONTENT */
+
+        .content {
+            position: absolute;
+            left: 8%;
+            top: 50%;
+            transform: translateY(-50%);
+
+            max-width: 600px;
+        }
+
+        .content h3 {
+            font-size: 14px;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .content h1 {
+            font-size: clamp(60px, 9vw, 110px);
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: -5px;
+        }
+
+        .content h1 span {
+            display: block;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #ddd;
+            line-height: 1.8;
+            margin: 25px 0;
+            max-width: 450px;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+            padding: 16px 35px;
+
+            background: white;
+            color: black;
+
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 2px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #222;
+            color: white;
+            transform: translateY(-4px);
+        }
+
+        /* SOCIAL MEDIA */
+
+        .social-links {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .social-links a {
+            width: 55px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(0,0,0,0.75);
+            color: white;
+
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            width: 85px;
+            background: white;
+            color: black;
+        }
+
+        /* BOTTOM INFORMATION */
+
+        .bottom-info {
+            position: absolute;
+            bottom: 35px;
+            left: 8%;
+            right: 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #ddd;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .content {
+                left: 7%;
+                right: 15%;
+            }
+
+            .content h1 {
+                font-size: 60px;
+                letter-spacing: -3px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .social-links a {
+                width: 38px;
+                height: 42px;
+                font-size: 10px;
+            }
+
+            .bottom-info {
+                font-size: 9px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <!-- NAVBAR -->
+
+        <nav>
+
+            <div class="logo">
+                ROCKSTAR GAMES
+            </div>
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">MEDIA</a></li>
+                <li><a href="#">EXPLORE</a></li>
+            </ul>
+
+        </nav>
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="content">
+
+            <h3>ROCKSTAR GAMES PRESENTS</h3>
+
+            <h1>
+                GRAND
+                <span>THEFT</span>
+                AUTO VI
+            </h1>
+
+            <p>
+                Welcome to Leonida.
+
+                Discover a world of opportunity,
+                danger and unforgettable stories.
+
+                Vice City is waiting for you.
+            </p>
+
+            <a href="https://www.rockstargames.com/VI"
+               target="_blank"
+               class="btn">
+                EXPLORE GTA VI →
+            </a>
+
+        </div>
+
+
+        <!-- SOCIAL MEDIA BUTTONS -->
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/rockstargames/"
+               target="_blank">IG</a>
+
+            <a href="https://www.facebook.com/rockstargames/"
+               target="_blank">FB</a>
+
+            <a href="https://x.com/RockstarGames"
+               target="_blank">X</a>
+
+            <a href="https://www.youtube.com/rockstargames"
+               target="_blank">YT</a>
+
+        </div>
+
+
+        <!-- BOTTOM INFORMATION -->
+
+        <div class="bottom-info">
+
+            <span>VICE CITY, LEONIDA</span>
+
+            <span>GRAND THEFT AUTO VI</span>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
